@@ -1,0 +1,35 @@
+::selection{
+    color:teal;
+    }
+    body{
+
+        background-color:hsl(187, 71%,1% ) ;
+        color: white;
+    }
+    .main{
+   
+    padding:50px;
+    float:left;
+    position:relative;
+    }
+    
+    .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven{
+    width:1000px;
+    padding:20px;
+    float:left;
+    position:relative;
+    box-shadow:0px 0px 80px blueviolet;
+    margin:5px;
+    }
+    
+    .input{
+    width:750px;
+    height:30px;
+    }
+    label{
+    font-size:25px;
+    font-weight:bold;
+    width:200px;
+    margin-right:20px;
+    }
+    
