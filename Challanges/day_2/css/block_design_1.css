@@ -1,0 +1,102 @@
+.container{
+    text-align: center;
+    padding-top: 50px;
+}
+.header{
+    color:black;
+    font-size:180%;
+    font-style:italic;
+    text-align:center;
+    border: 1px solid whitesmoke;
+    padding-top: 50px;
+    width:97%;
+    height:80px;
+    margin-top: 5px;
+    margin-left: 15px;
+    opacity: 0.80;
+    background: rgb(233, 157, 157);
+    float:left;
+    position:relative;
+    
+    }
+    .nav{
+        color:black;
+        font-size:180%;
+        font-style:italic;
+        text-align:center;
+        border: 1px solid whitesmoke;
+        padding-top: 40px;
+        width:97%;
+        height:40px;
+        margin-top: 5px;
+        margin-left: 15px;
+        opacity: 0.80;
+        background: rgb(144, 243, 182);
+        float:left;
+        position:relative;
+        
+        }
+        .cont{
+            margin-top: 5px;
+            color:black;
+            font-size:180%;
+            font-style:italic;
+            text-align:center;
+            border: 1px solid whitesmoke;
+            padding-top: 50px;
+            width:26.5%;
+            height:222px;
+            background: rgb(191, 243, 108);
+            float:left;
+            position:relative;
+            margin-left: 15px;
+            opacity: 0.80;
+        }
+        .contt{
+            margin-top: 5px;
+            color:black;
+            font-size:180%;
+            font-style:italic;
+            text-align:center;
+            border: 1px solid whitesmoke;
+            padding-top: 50px;
+            width:26%;
+            height:222px;
+            background: rgb(82, 162, 236);
+            float:left;
+            position:relative;
+            margin-left: 15px;
+            opacity: 0.80;
+        }
+        .maincon{
+            margin-top: 5px;
+            color:black;
+            font-size:180%;
+            font-style:italic;
+            text-align:center;
+            border: 1px solid whitesmoke;
+            padding-top: 50px;
+            width:42%;
+            height:222px;
+            background: rgb(250, 137, 212);
+            float:left;
+            position:relative;
+            margin-left: 15px;
+            opacity: 0.80;
+        }
+        .foot{
+            margin-top: 5px;
+            color:black;
+            font-size:180%;
+            font-style:italic;
+            text-align:center;
+            border: 1px solid whitesmoke;
+            padding-top: 50px;
+            width:97%;
+            height:50px;
+            background: rgb(247, 139, 96);
+            opacity: 0.80;
+            float:left;
+            position:relative;
+            margin-left: 15px;
+            }

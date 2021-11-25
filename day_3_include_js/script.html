@@ -1,0 +1,27 @@
+<script>
+    function oe(){
+        let low=document.forms["frm"]["low"].value;
+        let hi=document.forms["frm"]["hi"].value;
+    
+        if (low>hi){
+            alert("lower limit cannot be grater than upper limit");
+            return false;
+        }
+    
+        let eArray =[];
+        let seven =0;
+        let sodd =0;
+    
+        for(let i=low; i<=hi;i++){
+            if(i%2 === 0){
+                eArray.push(i);
+                seven= number(seven)+number(i);
+            }
+            sodd =number(sodd)+number(i);
+        }
+        document.getElementById("list").innerHTML = (`List of even nums : ${sArray}`);
+        document.getElementById("seven").innerHTML = (`Sum of all even nums in given range is <strong>${seven}</strong>`)
+        document.getElementById("sodd").innerHTML = (`Sum of all odd nums in given range is <strong>${sodd}</strong>`)
+    }
+    
+        </script>

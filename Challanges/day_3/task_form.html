@@ -1,0 +1,170 @@
+<!doctype html>
+
+<html>
+<head>
+    <title>form3 task</title>
+    <link rel="stylesheet" href="css/task_form.css">
+
+</head>
+<body>
+   <table>
+  
+
+<form name="frm" onsubmit="return validate()">
+    
+    <div class="main">
+    <div> <h1><u>STUDENT FORM</u></h1></div>
+<div class="one"><label>
+FIRST NAME:</label><input type="text" class="input"
+placeholder="first name" name="fname" />
+ </div>
+
+<div class="two"><label>
+LAST NAME: </label><input type="text" class="input"
+placeholder="last name"  name="lname" />
+</div>
+
+<div class="three"><label>
+FATHER NAME: </label><input type="text" class="input"
+placeholder="father name"  name="fathername" />
+</div>
+
+<div class="four"><label>
+MOTHER NAME:</label> <input type="text" class="input"
+placeholder="mother name"  name="mothername" />
+</div>
+
+<div class="three"><label>Age</label>
+    <input name="age" type="number" class="input" name="age"/>
+        </div>
+
+<div class="five"><label>
+Email: </label><input type="email" class="input"
+placeholder="example@gmail.com" name="email" />
+</div>
+
+<div class="six"><label>
+PHONE NUMBER:</label><input type="number" class="input" placeholder="1234567899"  name="phone" >
+</div>
+
+<div class="ten"><label>
+ADDRESS:</label><input type="text" class="input" placeholder="address"  name="add" >
+</div>
+
+<div class="seven"><label>
+CITY:</label>
+<select name="city" class="input">
+<option value=""  name="" >select one</option> 
+
+<option value="Varanasi">Varanasi</option> 
+
+<option value="Lucknow">Lucknow</option> 
+
+<option value="Delhi">Delhi</option> 
+
+<option value="Mumbai">Mumbai</option> 
+
+<option value="Kanpur">Kanpur</option></select> <br><br>
+</div>
+
+<div class="eight"><label>
+D.O.B:</label> <input type="date" class="input"
+placeholder="" name="dob" />
+</div>
+
+<div class="nine"><label>
+Select your gender:</label> <input type="radio" 
+name="gender"
+value="male" name="" />Male
+
+
+<input type="radio" 
+name="gender"
+value="female" name="" />Female
+</div>
+<div class="twl">
+<label>Select Your Qualifications:</label>
+<input type="checkbox" 
+name="qualification"
+value="10" name="" />10
+
+<input type="checkbox" 
+name="qualification"
+value="12" name="" />12
+
+<input type="checkbox" 
+name="qualification"
+value="graduation" name="" />Graduation
+</div>
+
+<div class="eleven"><label>SUBMIT</label>
+<input type="submit" class="input"
+value="Submit" />
+
+
+
+</div>
+</div>
+</form>
+
+</table>
+<script>
+    function validate(){
+        var fname=document.forms["frm"]["fname"].value;
+        var lname=document.forms["frm"]["lname"].value;
+        var fathername=document.forms["frm"]["fathername"].value;
+        var mothername=document.forms["frm"]["mothername"].value;
+        var age=document.forms["frm"]["age"].value;
+        var add=document.forms["frm"]["add"].value;
+        var email=document.forms["frm"]["email"].value;
+        var phone=document.forms["frm"]["phone"].value;
+  
+        var f=fname.length;
+        var l=lname.length;
+        var fn=fathername.length;
+        var mn=mothername.length;
+        var ag=age;
+        var ad=add.length;
+        var em=email.length;
+        var ph=phone.length;
+
+if(f<6){
+alert("length of first name is "+ fname.length +" so you are not eligible");
+return false;
+}
+if(l<4){
+alert("length of last name is "+ lname.length +" so you are not eligible");
+return false;
+}
+if(fn<=4){
+alert("length of father name is "+ fn +" so you are not eligible");
+return false;
+}
+if(mn<=4){
+alert("length of mother name is "+ mn +" so you are not eligible");
+return false;
+}
+if(ag<18){
+alert("you are below 18 your age is "+ ag +" so you are not eligible");
+return false;
+}
+if(em<5){
+alert("length of email is "+ em +" so you are not eligible");
+return false;
+}
+if(ph<9){
+alert("your phone number is "+ ph +" so you are not eligible");
+return false;
+}
+if(ad<10){
+alert("your address is "+ ad +" too short so you are not eligible");
+return false;
+}
+else{
+    alert(" you are eligible");
+return true;    
+}
+    }
+</script>
+</body>
+</html>

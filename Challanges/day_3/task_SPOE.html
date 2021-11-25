@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/task_SPOE.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPOE task</title>
+</head>
+<body>
+    <div class="main">
+    <h2>
+        <script>
+        function square(){
+            var a=document.getElementById("num").value;
+        document.getElementById("para").innerHTML = ("square of the number "+(a*a));
+        }
+        function prime(){
+            var b=document.getElementById("prm").value;
+            if(b<=1){
+                document.getElementById("prime").innerHTML = (b+" is not prime");
+                return false;
+            }
+            for(var i=2;i<b/2;i++){
+                if(b%i==0){
+                document.getElementById("prime").innerHTML = (b+" is not prime");
+                return false;
+                }
+            }
+        document.getElementById("prime").innerHTML = (b+" is Prime");
+        return false;
+        }
+        function OE(){
+            var c=document.getElementById("oee").value;
+            if(c==1){
+                document.getElementById("oe").innerHTML = (c+" is odd");
+        return false;
+            }
+            if(c%2==0){
+                document.getElementById("oe").innerHTML = (c+" is even");
+        return false;
+            }
+            else{
+                document.getElementById("oe").innerHTML = (c+" is odd");
+        return false;
+            }
+        }
+        </script>
+        <div id="para"><tt>Enter to find the square of number</tt></div>
+        <form >
+            
+            <input type="number" id="num" /><br>
+            <button type="button" onclick="square()">Check</button><br>
+            </form>
+        <div id="prime"><tt>Enter to find the number is Prime</tt></div>
+        <form>
+        <input type="number" id="prm" /><br>
+        <button type="button" onclick="prime()">Check</button><br>
+        </form>
+        <div id="oe"><tt>Check the number is odd or even</tt></div>
+
+        <form>
+            <input type="number" id="oee" /><br>
+            <button type="button" onclick="OE()">Check</button><br>
+            </form>
+        </h2>
+    </div>
+</body>
+</html>

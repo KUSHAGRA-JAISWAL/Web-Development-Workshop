@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>form3 task</title>
+    <link rel="stylesheet" href="css/emp.css" />
+  </head>
+
+  <body>
+    <table>
+      <form name="frm" onsubmit="return validate()">
+        <div class="main">
+          <div>
+            <h1><u>EMPLOYEE FORM</u></h1>
+          </div>
+          <div class="one">
+            <label> EMPLOYEE NAME:</label
+            ><input type="text" class="input" placeholder="name" name="fname" />
+          </div>
+
+          <div class="one">
+            <label> SALLERY: </label
+            ><input
+              type="text"
+              class="input"
+              placeholder="amount"
+              name="lname"
+            />
+          </div>
+
+          <div class="one">
+            <label> D.O.B:</label>
+            <input type="date" class="input" placeholder="" name="dob" />
+          </div>
+
+          <div class="one">
+            <label> ROLE: </label
+            ><input
+              type="text"
+              class="input"
+              placeholder="department"
+              name="fathername"
+            />
+          </div>
+
+          <div class="one">
+            <label> STARTING WORKING HOURS</label>
+            <input
+              type="time"
+              class="input"
+              placeholder="hrs"
+              name="starting-time"
+              min="09:00"
+              max="17:00"
+            />
+          </div>
+
+          <div class="one">
+            <label> ENDING WORKING HOURS</label>
+            <input
+              type="time"
+              class="input"
+              placeholder="hrs"
+              name="ending-time"
+              min="09:00"
+              max="17:00"
+            />
+          </div>
+
+          <div class="one">
+            <label>AGE:</label>
+            <input name="age" type="number" class="input" name="age" />
+          </div>
+
+          <!-- <div class="five"><label>
+                        Email: </label><input type="email" class="input" placeholder="example@gmail.com" name="email" />
+                </div> -->
+
+          <div class="one">
+            <label> PHONE NUMBER:</label
+            ><input
+              type="number"
+              class="input"
+              placeholder="1234567899"
+              name="phone"
+            />
+          </div>
+
+          <!-- <div class="ten"><label>
+                        ADDRESS:</label><input type="text" class="input" placeholder="address" name="add">
+                </div> -->
+
+          <div class="one">
+            <label> LIVING CITY:</label>
+            <select name="city" class="input">
+              <option value="" name="">select one</option>
+
+              <option value="Varanasi">Varanasi</option>
+
+              <option value="Lucknow">Lucknow</option>
+
+              <option value="Delhi">Delhi</option>
+
+              <option value="Mumbai">Mumbai</option>
+
+              <option value="Kanpur">Kanpur</option>
+            </select>
+            <br /><br />
+          </div>
+
+          <div class="one">
+            <label> SELECT YOU RELATONSHIP:</label>
+            <input type="radio" name="gender" value="male"/>MARRIED
+            <input type="radio" name="gender" value="male"/>UNMARRIED
+            <input type="radio" name="gender" value="female"/>DEVORCED
+          </div>
+          <div class="one">
+            <label>SELECT YOUR QUALIFICATIONS:</label>
+            <input type="checkbox" name="qualification" value="10" id="10"  />10
+
+            <input type="checkbox" name="enter" value="12"  id="12"/>12
+
+            <input
+              type="checkbox"
+              name="graduation"
+              value="grad"
+              id="grad"
+            />GRADUATION
+
+            <input
+            type="checkbox"
+            name="postgraduation"
+            value="post"
+            id="post"
+          />POST GRADUATION
+          </div>
+
+          <div class="one"> 
+            <label> LINKEDIN URL:</label
+            ><input type="url" class="input" placeholder="https://in.linkedin.com/" name="lid" />
+          </div>
+
+          <div class="one">
+            <label>SUBMIT</label>
+            <input type="submit" class="input" value="Submit" />
+          </div>
+        </div>
+      </form>
+    </table>
+    <script>
+      function validate() {
+        var fname = document.forms["frm"]["fname"].value;  
+        var lname = document.forms["frm"]["lname"].value;
+        var fathername = document.forms["frm"]["fathername"].value;
+        var startingTime = document.forms["frm"]["starting-time"].value;
+        var endTime = document.forms["frm"]["ending-time"].value;
+        var age = document.forms["frm"]["age"].value;
+        // var add = document.forms["frm"]["add"].value;
+        // var email = document.forms["frm"]["email"].value;
+        var phone = document.forms["frm"]["phone"].value;
+        var gender = document.forms["frm"]["gender"].value; // gender.length = 0  // true, false 
+         var qualification = document.getElementById("10");
+         var enter = document.getElementById("12");
+        var graduation = document.getElementById("grad");
+        var postgraduation = document.getElementById("post");
+        var lid = document.forms["frm"]["lid"].value;
+        // var f = fname.length;
+        // var l = lname.length;
+        // var fn = fathername.length;
+        // var mn = mothername.length;
+        // var ag = age;
+        // var ad = add.length;
+        // var em = email.length;
+        // var ph = phone.length;
+        console.log(fname,lname,fathername);
+        console.log(startingTime,endTime);
+
+        if (fname.length < 6) {
+          alert(
+            "length of first name is " + fname.length + " so you are not eligible"
+          );
+          return false;
+        }
+        if (lname.length < 4) {
+          alert(
+            "length of last name is " +lname.length +" so you are not eligible" );
+          return false;
+        }
+        if (fathername.length <= 4) {
+          alert("length of Role is " + fathername.length + " so you are not eligible");
+          return false;
+        }
+        if (startingTime.length == 0 || endTime.length==0) {
+
+          alert("Given time is invalid ");
+          return false;
+        }
+
+        if (age< 18) {
+          alert(
+            "you are below 18 your age is " + age + " so you are not eligible"
+          );
+          return false;
+        }
+        // if (em < 5) {
+        //     alert("length of email is " + em + " so you are not eligible");
+        //     return false;
+        // }
+        if (phone.length!=10) {
+          alert("your phone number is " + phone.length + " so you are not eligible");
+          return false;
+        }
+        
+        // if (ad < 10) {
+        //     alert("your address is " + ad + " too short so you are not eligible");
+        //     return false;
+        // }
+        if(gender.length==0){
+            alert("fill the relation section properlly " + gender.length );
+            return false;
+        }
+        if(qualification.checked==false || enter.checked==false|| graduation.checked==false || postgraduation.checked==false){
+             alert("fill the qualification  section properlly");
+            return false;
+        }
+        // if(enter.length==0){
+        //      alert("fill the qualification  section properlly " + enter.length );
+        //     return false;
+        // }
+        // if(graduation.length==0){
+        //      alert("fill the qualification  section properlly " + graduation.length );
+        //     return false;
+        // }
+        // if(postgraduation.length==0){
+        //      alert("fill the qualification  section properlly " + postgraduation.length );
+        //     return false;
+        // }
+        if(lid.length==0){
+            alert("url can't be empty " + lid.length);
+            return false;
+        }
+
+      
+          alert(" you are eligible");
+          return true;
+        
+      }
+    </script>
+  </body>
+</html>

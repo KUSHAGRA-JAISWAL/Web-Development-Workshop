@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html>
+<head>
+<link rel="stylesheet" href="css/form_day_3.css">
+
+</head>
+
+<body>
+    <u><h1 style="text-align: center; font-style: italic;">VOTING FORM</h1></u>
+
+<div class="main">
+<form name ="frm" onsubmit ="return validate()">
+<div class="one"><label>
+FIRST NAME:</label><input name="name" type="text" class="input"
+placeholder="your name" />
+ </div>
+
+<div class="eleven"><label>Age</label>
+<input name="age" type="number" class="input"/>
+<button type="submit">Save</button>
+</div>
+
+
+</form>
+</div>
+<script>
+
+function validate(){ 
+
+var name =document.forms["frm"]["name"].value;
+var age = document.forms["frm"]["age"].value;
+
+var len=name.length;
+
+if(age<18){
+
+window.alert(name+" is below 18 and not eligible for voting" );
+return false;
+
+
+}
+if(len<6){
+window.alert(name+" your name is smaller then 6 characters so you are not eligible for voting" +" length= "+len)
+
+}
+else{
+
+window.alert(name + " is eligible for voting");
+return true;
+
+
+}
+}
+
+</script>
+</body>
+</html>

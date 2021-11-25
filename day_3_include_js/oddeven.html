@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>odd even</title>
+</head>
+<body>
+    <h3 id="list">Enter lower and upper limit</h3>
+                <p id="sumEven"></p>
+                <p id="sumOdd"></p>
+                <form name="findOddEven" onsubmit="return listOddEven()">
+                    <label for="lowerLimit">Enter lower limit</label>
+                    <input type="number" min="0" max="100" name="lowerLimit" id="lowerLimit" />
+                    <label for="upperLimit">Enter upper limit</label>
+                    <input type="number" min="0" max="100" name="upperLimit" id="upperLimit" />
+                    <button type="submit">List all</button>
+                </form>
+<script>
+  console.log("index.js loaded")
+const listOddEven = () => {
+    console.log("listOddEven function")
+
+    let lowerLimit = document.forms["findOddEven"]["lowerLimit"].value;
+    let upperLimit = document.forms["findOddEven"]["upperLimit"].value;
+
+    if (lowerLimit>upperLimit){
+        alert("Lower limit cannot be greater than upper limit")
+        return true;
+    }
+
+    let evenArray = [];
+    let sumEven = 0;
+    let sumOdd = 0;
+   
+    for (let i=lowerLimit; i<=upperLimit; i++){
+        console.log(typeof(i))
+        if(i%2 === 0){
+            evenArray.push(i);
+            sumEven =  Number(sumEven)+Number(i);
+        }
+        sumOdd = Number(sumOdd)+Number(i);
+    }
+
+    document.getElementById("list").innerHTML = (`List of even nums : ${evenArray}`);
+    document.getElementById("sumEven").innerHTML = (`Sum of all even nums in given range is <strong>${sumEven}</strong>`)
+    document.getElementById("sumOdd").innerHTML = (`Sum of all odd nums in given range is <strong>${sumOdd}</strong>`)
+    
+    return false;
+}
+</script>
+  
+   
+</body>
+</html>

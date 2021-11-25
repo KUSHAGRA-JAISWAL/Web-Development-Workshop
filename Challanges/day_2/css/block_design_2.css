@@ -1,0 +1,112 @@
+.container{
+    text-align: center;
+    margin-top: 20px;
+}
+.comp{
+    color:black;
+    font-size:180%;
+    font-style:italic;
+    text-align:center;
+    border: 1px solid whitesmoke;
+    padding-top: 50px;
+    width:98%;
+    height:70px;
+    margin-left: 15px;
+    opacity: 0.80;
+    background: rgb(13, 241, 108);
+    float:left;
+    position:relative;
+    
+    }
+    .header{
+        color:black;
+        font-size:180%;
+        font-style:italic;
+        text-align:center;
+        border: 1px solid whitesmoke;
+        padding-top: 50px;
+        width:98%;
+        height:100px;
+        margin-left: 15px;
+        opacity: 0.80;
+        background: rgb(131, 17, 238);
+        float:left;
+        position:relative;
+        
+        }
+    .nav{
+        color:black;
+        font-size:160%;
+        font-style:italic;
+        text-align:center;
+        border: 1px solid whitesmoke;
+        padding-top: 10px;
+        width:23.6%;
+        height:30px;
+        background: rgb(248, 75, 156);
+        float:left;
+        position:relative;
+        margin-left: 15px;
+        opacity: 0.80;
+        }
+        .about{
+            
+            color:black;
+            font-size:180%;
+            font-style:italic;
+            text-align:center;
+            border: 1px solid whitesmoke;
+            padding-top: 30px;
+            width:53%;
+            height:300px;
+            background: rgb(241, 42, 7);
+            float:left;
+            position:relative;
+            margin-left: 15px;
+            opacity: 0.80;
+        }
+        .ql{
+            color:black;
+            font-size:180%;
+            font-style:italic;
+            text-align:center;
+            border: 1px solid whitesmoke;
+            padding-top: 7px;
+            width: 43.8%;
+            height:120px;
+            background: rgb(22, 102, 252);
+            float:left;
+            position:relative;
+            margin-left: 15px;
+            opacity: 0.80;
+        }
+        .qll{
+            color:black;
+            font-size:180%;
+            font-style:italic;
+            text-align:center;
+            border: 1px solid whitesmoke;
+            padding-top: 20px;
+            width: 43.8%;
+            height:180px;
+            background: rgb(49, 85, 245);
+            float:left;
+            position:relative;
+            margin-left: 15px;
+            opacity: 0.80;
+        }
+        .site{
+            color:black;
+            font-size:180%;
+            font-style:italic;
+            text-align:center;
+            border: 1px solid whitesmoke;
+            padding-top: 50px;
+            width:98%;
+            height:70px;
+            background: rgb(7, 78, 119);
+            opacity: 0.80;
+            float:left;
+            position:relative;
+            margin-left: 15px;
+            }

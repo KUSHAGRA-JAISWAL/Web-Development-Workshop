@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<body>
+<h2>
+<script>
+function abc(){
+
+
+document.write("hello world <br>");
+
+}
+
+function sum(){
+var a=10;b=20;
+document.write("sum of A+B is "+(a+b)+"<br>");
+}
+
+function SUM(a,b){
+
+document.write("sum of A+B is "+(a+b)+"<br>");
+}
+
+function sq(a){
+
+document.write("square of A is "+(a*a)+"<br>");
+}
+
+
+function sqr(){
+
+document.getElementById("para").innerHTML = ("square of the number "+(a*a));
+
+}
+
+
+function sqar(a){
+
+document.getElementById("para").innerHTML = ("square of the number "+(a*a));
+
+}
+
+
+
+abc();
+sum();
+SUM(11,10);
+sq(20);
+
+</script>
+<p id="para"></p><br>
+<form>
+input your number here <br><input type="text" id="num" /><br>
+<button type="button" onclick="sqr()">click here</button><br>
+
+input your number here <br><input type="text" id="num" onchange="sqar(this.value)"/><br>
+
+
+
+</form>
+</h2>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!doctype html>
+
+<html>
+<head>
+<link rel="stylesheet" href="css/form_day_3.css">
+
+</head>
+<body>
+
+<div class="main">
+
+<form name="frm" onsubmit="return validate()">
+
+<div class="one"><label>
+FIRST NAME:</label><input type="text" class="input"
+placeholder="your name" name="fname"/>
+ </div>
+
+<div class="two"><label>
+LAST NAME: </label><input type="text" class="input"
+placeholder="your name" name=" lname" />
+</div>
+
+<div class="three"><label>
+FATHER NAME: </label><input type="text" class="input"
+placeholder="your name" name="fathername"/>
+</div>
+
+<div class="four"><label>
+MOTHER NAME:</label> <input type="text" class="input"
+placeholder="your name" name="mothername"/>
+</div>
+
+<div class="five"><label>
+Email: </label><input type="email" class="input"
+placeholder="example@gmail.com"name="email"/>
+</div>
+
+<div class="six"><label>
+PHONE NUMBER:</label><input type="number" class="input" name="phone">
+</div>
+
+<div class="ten"><label>
+ADDRESS:</label><input type="text" class="input" placeholder="address" name="add">
+</div>
+
+<div class="seven"><label>
+CITY:</label>
+<select name="city" class="input">
+<option value="" >select one</option> 
+
+<option value="Varanasi">Varanasi</option> 
+
+<option value="Lucknow">Lucknow</option> 
+
+<option value="Delhi">Delhi</option> 
+
+<option value="Mumbai">Mumbai</option> 
+
+<option value="Kanpur">Kanpur</option></select> <br><br>
+</div>
+
+<div class="eight"><label>
+D.O.B:</label> <input type="date" class="input"
+placeholder="" name="dob">
+</div>
+
+<div class="nine"><label>
+Select your gender:</label> <input type="radio" 
+name="gender"
+value="male"/>Male
+
+
+<input type="radio" 
+name="gender"
+value="female"/>Female
+</div>
+
+<div class="eleven"><label>SUBMIT</label>
+<input type="submit" class="input"
+value="Submit" />
+</div>
+
+</form>
+</div>
+<script>
+
+function validate(){ 
+var fname =document.forms["frm"]["fname"].value;
+var len=fname.length;
+if(len<6){
+alert("length of first name is "+ fname.length +" so you are not eligible");
+return false;
+}else{
+    alert(" you are eligible");
+return true;    
+}
+
+
+}
+
+</script>
+</body>
+</html>

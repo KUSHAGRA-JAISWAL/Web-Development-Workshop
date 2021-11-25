@@ -1,0 +1,31 @@
+
+::selection{
+color:teal;
+}
+.main{
+background: ;
+padding:50px;
+float:left;
+position:relative;
+}
+
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven{
+width:1000px;
+padding:20px;
+float:left;
+position:relative;
+box-shadow:0px 0px 8px grey;
+margin:5px;
+}
+
+.input{
+width:750px;
+height:30px;
+}
+label{
+font-size:25px;
+font-weight:bold;
+width:200px;
+margin-right:20px;
+}
+
